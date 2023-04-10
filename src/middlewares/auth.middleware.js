@@ -8,17 +8,17 @@ const verifyToken = async function (req, res, next) {
   const token = req.headers.token;
   // If token is unavialable,
   if (!token) {
-    return res.status(403).send("Unauthorized");
+    return res.status(403).send({ status: false, messagee: "Unauthorised" });
   }
 
   // If token found in blacklist
   try {
     let blacklist = await Blacklist.findOne({ token });
     if (blacklist) {
-      return res.status(403).send("Unauthorized");
+      return res.status(403).send({ status: false, messagee: "Unauthorised" });
     }
   } catch (error) {
-    return res.status(403).send(e.message);
+    return res.status(403).send({ status: false, messagee: e.message });
   }
 
   try {
@@ -29,7 +29,7 @@ const verifyToken = async function (req, res, next) {
       return res.status(401).send("Operation not allowed.");
     }
   } catch (e) {
-    return res.status(403).send({messagee:e.message});
+    return res.status(403).send({ status: false, messagee: e.message });
   }
 };
 
