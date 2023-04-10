@@ -76,7 +76,7 @@ app.post("/logout", async (req, res) => {
     let black = await Blacklist.create({ token });
     return res
       .status(200)
-      .send({ status: false, messege: "User logout successfully" });
+      .send({ status: true, messege: "User logout successfully" });
   } catch (e) {
     return res
       .status(400)
