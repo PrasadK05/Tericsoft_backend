@@ -29,7 +29,7 @@ const verifyToken = async function (req, res, next) {
       return res.status(401).send("Operation not allowed.");
     }
   } catch (e) {
-    return res.status(403).send(e.message);
+    return res.status(403).send({messagee:e.message});
   }
 };
 
