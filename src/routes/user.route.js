@@ -54,7 +54,7 @@ app.post("/login", async (req, res) => {
           expiresIn: "7 days",
         });
 
-        res.status(200).send({ status: true, token });
+        res.status(200).send({ status: true, token, name:user.name });
       } else {
         return res
           .status(400)
