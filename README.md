@@ -243,7 +243,7 @@ Start the server for production
 
 ## Related
 
-Checkout our front end
+Checkout front end repo and live website
 
 [Frontend_Repo](https://github.com/PrasadK05/Terisoft_frontend)
 
