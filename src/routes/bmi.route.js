@@ -21,6 +21,7 @@ app.post("/calculateBMI", async (req, res) => {
 
   weight = Number(weight);
   height = Number(height);
+  height = height * 0.3048;
 
   // mbi calculation
   let calculation = weight / height ** 2;
