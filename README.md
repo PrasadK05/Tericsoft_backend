@@ -245,7 +245,11 @@ Start the server for production
 
 Checkout our front end
 
-[Front end Repo]("https://github.com/PrasadK05/Terisoft_frontend")
+[Frontend_Repo](https://github.com/PrasadK05/Terisoft_frontend)
 
-[Frontend Deployed]("https://scintillating-stardust-6ed049.netlify.app")
+[Deployed](https://scintillating-stardust-6ed049.netlify.app)
+
+## Authors
+
+- [Prasad Karde](https://github.com/PrasadK05)
 
